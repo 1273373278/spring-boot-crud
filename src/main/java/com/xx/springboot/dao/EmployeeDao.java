@@ -40,7 +40,8 @@ public class EmployeeDao {
 		employee.setDepartment(departmentDao.getDepartment(employee.getDepartment().getId()));
 		employees.put(employee.getId(), employee);
 	}
-	
+
+	//查询所有员工列表
 	public Collection<Employee> getAll(){
 		return employees.values();
 	}
